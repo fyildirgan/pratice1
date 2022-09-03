@@ -8,6 +8,7 @@ df = sns.load_dataset("titanic")
 
 #a = df[(df['embarked'] == 'C') | (df['embarked'] == 'Q')]
 #b = df[df["embarked"] != 'S']
-print(a)
-print(b)
-
+c = df[df['embarked'].isin(['C', 'Q'])]
+#print(a)
+#print(b)
+print(c)
